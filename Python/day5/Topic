@@ -1,0 +1,18 @@
+Day 5: Tuple, Set, Dictionary (Core Data Structures)
+Topics
+●	Tuple immutability
+
+●	Set uniqueness and operations
+
+●	Dictionary fundamentals:
+
+○	Key-value logic
+
+○	Iteration
+
+○	Nested dictionaries
+
+Practice Tasks
+●	Word frequency counter
+
+●	Student database using dictionaries
