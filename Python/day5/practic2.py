@@ -27,7 +27,7 @@ def user_choice(s_dict):
                 exit()
                 print()
             case _:
-                exit("incalid input")
+                exit("invalid input")
                 print()
         print("\n")
 
@@ -50,9 +50,9 @@ def add_student(s_dict):
         s_dict[roll_num] = {"name":name,"class":s_class,"age":age}
         print(f"{roll_num} {s_dict[roll_num]} is added ")
 
-#bug in update function
+#update function
 def update_student(s_dict):
-    roll_unum = s_input("Enter roll number to update - ")
+    roll_unum = int(s_input("Enter roll number to update - "))
     print(s_dict)
     if roll_unum not in s_dict:
         return print("roll number not found ")
@@ -65,7 +65,7 @@ def update_student(s_dict):
     
 #delete function
 def delete_student(s_dict):
-    roll_dnum = s_input("Enter roll number to delete - ")
+    roll_dnum = int(s_input("Enter roll number to delete - "))
     if roll_dnum in s_dict:
         s_dict.pop(roll_dnum,None)
         print(roll_dnum,"student detail is deleted ")
@@ -79,4 +79,5 @@ def show_students(s_dict):
     
     for key,value in s_dict.items():
         print(f"roll number : {key} \n name : {value["name"]} , class : {value["class"]} age {value["age"]} \n")
+
 main()
