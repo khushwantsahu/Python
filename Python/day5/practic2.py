@@ -1,10 +1,8 @@
-
+#●	Student database using dictionaries
 def main():
     student_dict = {}
-
     user_choice(student_dict)
     
-
 
 def user_choice(s_dict):
     while True:
@@ -53,7 +51,7 @@ def add_student(s_dict):
 #update function
 def update_student(s_dict):
     roll_unum = int(s_input("Enter roll number to update - "))
-    print(s_dict)
+    
     if roll_unum not in s_dict:
         return print("roll number not found ")
     
@@ -66,6 +64,7 @@ def update_student(s_dict):
 #delete function
 def delete_student(s_dict):
     roll_dnum = int(s_input("Enter roll number to delete - "))
+    
     if roll_dnum in s_dict:
         s_dict.pop(roll_dnum,None)
         print(roll_dnum,"student detail is deleted ")
@@ -81,3 +80,4 @@ def show_students(s_dict):
         print(f"roll number : {key} \n name : {value["name"]} , class : {value["class"]} age {value["age"]} \n")
 
 main()
+
